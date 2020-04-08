@@ -1,0 +1,63 @@
+<p>You can use alternative markup without <code>ul li</code> elements</p>
+
+<nav ngbNav #nav="ngbNav" class="nav-tabs">
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Création d'article</a>
+    <ng-template ngbNavContent>
+      <div class="container-fluid" id="container">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-6 ">
+              <h1 class="text-center text-uppercase " > <span class="text-danger">C</span>reation <span class="text-danger">d</span>'une <span class="text-danger">n</span>ouvelle <span class="text-danger">F</span>ormation</h1>
+            </div>
+          </div>
+          <div class="row mt-5 justify-content-center">
+            <div class="col-md-12 col-lg-11 ">
+              <h1><input type="text" maxlength="100" class="form-control" /></h1>
+            </div>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <h3 class=" text-center">Indiquez le lien vers l'image</h3>
+            <div class="col-lg-11 text-center mt-5">
+              <!--<input type="file" name="file" ng2FileSelect [uploader]="uploader" />-->
+            </div>
+          </div>
+          <div class="row mt-5 justify-content-center">
+            <div class="col-md-12  col-lg-11">
+              <h1><input type="text" maxlength="100" class="form-control "  /></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Two</a>
+    <ng-template ngbNavContent>
+      <p>
+        Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
+        farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
+        ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar
+        helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson
+        8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester
+        stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
+      </p>
+    </ng-template>
+  </ng-container>
+  <ng-container ngbNavItem>
+    <a ngbNavLink>Three</a>
+    <ng-template ngbNavContent>
+      <p>
+        Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi.
+        Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio.
+        Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna,
+        egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec
+        tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et
+        magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget
+        neque. Phasellus nec tortor vel tellus pulvinar feugiat.
+      </p>
+    </ng-template>
+  </ng-container>
+</nav>
+
+<div [ngbNavOutlet]="nav" class="mt-2"></div>
